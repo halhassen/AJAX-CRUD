@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html >
 <head>
-	<title>My App</title>
+	<title>Superheroes</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
 </head>
 <body>
-	<h1>The App Works!</h1>
-	<div>
-		<input type="text" id="first" placeholder="First Name">
-		<input type="text" id="last" placeholder="Last Name">
+	<h1 class="page-header text-center">Superhero Shoebox</h1>
+	<div class="text-center">
+		<input type="text" id="name" placeholder="Superhero Name">
+		<input type="text" id="identity" placeholder="Civilian Identity">
+		<input type="text" id="powers" placeholder="Powers">
+		<input type="text" id="img" placeholder="Image (url)">
+		<input type="text" id="video" placeholder="Video (YouTube url)">		
+		<button id="addButton" onclick="create()">Add Superhero</button>
+
 		<hr>
 		<div id="update">
-			<input type="text" id="edit_first"/>
-			<input type="text" id="edit_last"/>
+			<input type="text" id="edit_name"/>
+			<input type="text" id="edit_identity"/>
+			<input type="text" id="edit_powers"/>
+			<input type="text" id="edit_img"/>
+			<input type="text" id="edit_video"/>
 			<button id="submit_edit">Submit Edit</button>
 		</div>	<br>
 
-
-		<button onclick="create()">Add Person</button>
-		<div id="people"></div>
+		<div id="superHeroes"></div>
 	</div>
 
 	<script src="/jquery/dist/jquery.js" charset="utf-8"></script>
